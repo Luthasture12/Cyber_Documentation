@@ -10,8 +10,9 @@
 
 As shown in the image above, the seven layers are laid out as such:
 
-| Layer 7 | Application |
+| Layer | Method |
 | :---- | :---- |
+| Layer 7 | Application |
 | Layer 6 | Presentation |
 | Layer 5 | Session |
 | Layer 4 | Transport |
@@ -19,27 +20,50 @@ As shown in the image above, the seven layers are laid out as such:
 | Layer 2 | Data Link |
 | Layer 1 | Physical |
 
-Layers 5-7 focus on applications: interfacing for a user, formatting data, etc. Layers 1-4 focus on transporting data. When following the process of data transporting from a device to a destination device, follow the flow shown in the image. It starts at Layer 7 and moves down to Layer 1 on the first device. Then after it transports and reaches the destination, it starts at Layer 1 and goes to Layer 7\. Depending on certain scenarios and protocols in play, it could start or end at a lower level.
+Layers 5-7 focus on applications: interfacing for a user, formatting data, etc. Layers 1-4 focus on transporting data. When following the process of data transporting from a device to a destination device, follow the flow shown in the image. It starts at Layer 7 and moves down to Layer 1 on the first device. Then after it transports and reaches the destination, it starts at Layer 1 and goes to Layer 7. Depending on certain scenarios and protocols in play, it could start or end at a lower level.
 
-**Application Level**  
+### Application Layer
 This is the layer closest to the end user. It provides network services to applications on the user’s device, making them able to communicate over a network. For example, when the web browser performs DNS resolution and begins to prepare reaching out to a web server, this is Layer 7\. Sending and receiving emails also starts at layer 7\. 
 
 **Protocols used:** HTTP, FTP, SMTP/POP3 (send and receive emails), DNS, and others used by software to communicate over the network.
 
-**Presentation Level**  
+### Presentation Layer 
 This layer specializes in translating data between the application layer and the varying formats the data may need to be in to transfer over the network. Data encryption/decryption, compression, and data translation are examples of what happens in this layer.
 
 **Data translation** is the process of turning data from one format into another. This makes it so complex code or information can be reformatted into a standardized type of data that can be easily transferred, and then it can be restored when it reaches the target device. For example, files can be compressed using ZIP compression, becoming a zipped file and compressed for easier delivery.
 
-**Protocols used:** SSL/TLS for encryption, 
+**Protocols used:** SSL/TLS for encryption
 
-**Session Level**  
+### Session Layer  
 This layer manages the connection and communication between two devices or applications. The several phases of this layer are as follows:
 
 1. Establishes/initiates the “**session**”, or connection, between the devices/applications.  
 2. Maintains the session as the devices communicate. It determines if the communication is using **half-duplex** (each endpoint takes turn sending data, back and forth), or **full-duplex** (both endpoints send and receive data at the same time). This layer will send occasional synchronization points, so if the connection is interrupted, then the communication can continue from a saved point rather than restarting the entire thing. It will also perform recovery, so data loss can be mitigated.  
 3. Properly closes the session.
 
-**Protocols used:** 
+**Protocols used:** Point-to-Point Tunneling Protocol (PPTP)
+
+
+### Transport Layer
+This layer focuses on making sure data is **reliably** transported across a network.
+
+Data is broken up into pieces called **packets** to be sent across the network. Each packet is given two additional sections: a header and footer. Information is put in them to help facilitate the transfer. Then, it manages the flow of data to prevent congestion in the traffic.
+
+If the protocol is using TCP, it will check for errors and resend any lost or corrupted packets. Then it wil re-arrange the packets back into order.
+
+This layer uses ports to help direct traffic. It helps software anticipate what type of data is being sent.
+
+#### Header
+Common information put in the header are:
+* **Source Port**
+* **Destination Port**
+* **Sequence Number**: tracks the position of the packets to reassemble (TCP only)
+* ****
+
+#### Footer
+Common information put in the footer are:
+
+
+
 
 ## (TCP/IP) Transmission Control Protocol/Internet Protocol
