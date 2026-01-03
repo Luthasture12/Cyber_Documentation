@@ -88,3 +88,5 @@ PORTS:
 Port 110 \- default port for POP3, and it uses connections without encryption. 
 
 Port 995 \- port used for POP3 connections using SSL/TLS encryption. This service is often referred to as POP3S (POP3 Secure).
+
+

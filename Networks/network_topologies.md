@@ -2,7 +2,7 @@
 
 Network Topologies  
 
-![Network Topologies](./images/network-topology.png)
+![Network Topologies](./images/network_topology.png)
 
 **Point-to-point**: private connection between 2 or more devices for private services. It’s closed, so it doesn’t communicate with other devices over the Internet (everything is local, no middle-man). It’s technically the most secure network, and it theoretically shouldn’t require encryption (unless you are worried about someone tapping your lines or something). If the cord goes bad, then communication between the two connected devices is terminated.  
 
