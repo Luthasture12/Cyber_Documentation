@@ -1,0 +1,1 @@
+There's a lot of jargon that can get used in conversations. This section helps serve as a dictionary of sorts that you can refer to if someone uses a term or acronym that you are unfamiliar with.

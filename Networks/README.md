@@ -1,0 +1,1 @@
+This is more of an IT thing in general. However, this is general information that will give a good background and may be of assistance. It can help a lot with Capture-the-Flags and analysis skills. I go over network setup, as well as data  that gets sent over the network (packets, ports, protocols).

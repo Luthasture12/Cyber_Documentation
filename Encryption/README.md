@@ -1,0 +1,3 @@
+# Encryption
+
+This one is a difficult subject with a lot of math if you get in depth. However, knowing some basic fundamentals will be helpful in knowing how it works, why it works, and what to do on your end. There are different encryption methods that I will go over. NOTE: due to powerful computation technology that's getting developed and released, encryption is in a point of vulnerability and big discussion of what to do. I'm not an expert on this subject, so I don't have any contribution to that discussion. I'll give a brief summary of the issue at large, though

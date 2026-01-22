@@ -1,0 +1,1 @@
+This section is less on the technical side and more on the policy side. However, knowing risk can help with defense (knowing what to protect) and offense (knowing what to attack) in practice. This section will cover assigning risk than actual implemention of anything technical.
